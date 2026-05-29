@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Princess ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+    /* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* =========================
+   PREMIUM BLACK + ROSE GOLD + PURPLE THEME
+========================= */
+
+body{
+    background:
+    radial-gradient(circle at top left,#ffb06722,transparent 28%),
+    radial-gradient(circle at bottom right,#a855f722,transparent 30%),
+    linear-gradient(
+    135deg,
+    #050505,
+    #0d0b12,
+    #16111f,
+    #09090f
+    );
+
+    color:white;
+    overflow-x:hidden;
+}
+
+/* =========================
+   GLOW EFFECTS
+========================= */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:650px;
+    height:650px;
+    background:#ff9f43;
+    filter:blur(190px);
+    top:-250px;
+    left:-250px;
+    opacity:0.18;
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    background:#8b5cf6;
+    filter:blur(190px);
+    bottom:-250px;
+    right:-250px;
+    opacity:0.18;
+    z-index:-2;
+}
+
+/* =========================
+   STARS
+========================= */
+
+.stars{
+    position:fixed;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.stars span{
+    position:absolute;
+    width:3px;
+    height:3px;
+    background:white;
+    border-radius:50%;
+    animation:twinkle 3s infinite;
+}
+
+@keyframes twinkle{
+
+0%,100%{
+opacity:0.2;
+transform:scale(1);
+}
+
+50%{
+opacity:1;
+transform:scale(1.8);
+}
+
+}
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.hearts span{
+    position:absolute;
+    bottom:-50px;
+    animation:float 10s linear infinite;
+    opacity:0.7;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0) rotate(0deg);
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+
+}
+
+/* =========================
+   GLASS EFFECT
+========================= */
+
+.glass{
+    background:rgba(255,255,255,0.06);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:32px;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.45),
+    0 0 30px rgba(255,159,67,0.05);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+}
+
+.hero h1{
+    font-size:84px;
+    margin-bottom:22px;
+
+    background:linear-gradient(
+    to right,
+    #ffcf9f,
+    #ff9f43,
+    #d8b4fe,
+    #ffffff
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    animation:glow 3s infinite alternate;
+}
+
+@keyframes glow{
+
+from{
+filter:drop-shadow(0 0 10px rgba(255,159,67,0.35));
+}
+
+to{
+filter:drop-shadow(0 0 30px rgba(168,85,247,0.85));
+}
+
+}
+
+.hero p{
+    font-size:24px;
+    color:#f8e7d4;
+    max-width:900px;
+}
+
+/* =========================
+   SONG BOX
+========================= */
+
+.song-box{
+    margin-top:35px;
+    max-width:850px;
+    padding:35px;
+    animation:fadeUp 1.2s ease;
+}
+
+.song-box p{
+    line-height:2;
+    font-size:20px;
+    color:#fff7ed;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+button{
+    margin-top:40px;
+    padding:18px 55px;
+    border:none;
+    border-radius:60px;
+
+    background:linear-gradient(
+    to right,
+    #ff9f43,
+    #f59e0b,
+    #8b5cf6
+    );
+
+    color:white;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.4s;
+
+    box-shadow:
+    0 15px 35px rgba(255,159,67,0.28);
+}
+
+button:hover{
+    transform:translateY(-6px) scale(1.05);
+
+    box-shadow:
+    0 20px 45px rgba(168,85,247,0.35);
+}
+
+/* =========================
+   FADE ANIMATION
+========================= */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+    padding:90px 20px;
+    text-align:center;
+}
+
+h2{
+    font-size:50px;
+    margin-bottom:45px;
+
+    background:linear-gradient(
+    to right,
+    #ffcf9f,
+    #e9d5ff
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:0 0 18px rgba(255,255,255,0.08);
+}
+
+/* =========================
+   SURPRISE SECTION
+========================= */
+
+#surprise{
+    display:none;
+    width:90%;
+    max-width:1050px;
+    margin:auto;
+    padding:60px 30px;
+    animation:fadeUp 1s ease;
+}
+
+/* =========================
+   PHOTO GALLERY
+========================= */
+
+.photos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.photos img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:25px;
+    transition:0.5s;
+
+    border:2px solid rgba(255,255,255,0.06);
+}
+
+.photos img:hover{
+    transform:translateY(-10px) scale(1.03);
+
+    box-shadow:
+    0 15px 40px rgba(255,159,67,0.2);
+}
+
+/* =========================
+   MEMORY SLIDER
+========================= */
+
+.memory-slider{
+    position:relative;
+    width:90%;
+    max-width:1050px;
+    height:620px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:35px;
+}
+
+.memory-slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition:1.5s ease;
+}
+
+.memory-slide.active{
+    opacity:1;
+}
+
+.memory-slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.memory-text{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding:45px;
+
+    background:linear-gradient(
+    to top,
+    rgba(0,0,0,0.92),
+    transparent
+    );
+
+    text-align:left;
+}
+
+.memory-text h3{
+    font-size:40px;
+    margin-bottom:12px;
+    color:#ffe7c2;
+}
+
+.memory-text p{
+    font-size:20px;
+    line-height:1.8;
+    color:#f8fafc;
+}
+
+/* =========================
+   REASONS GRID
+========================= */
+
+.reasons-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.reason-card{
+    padding:35px 25px;
+    border-radius:30px;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(14px);
+
+    transition:0.5s;
+
+    position:relative;
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,0.06);
+}
+
+.reason-card::before{
+    content:"";
+    position:absolute;
+    width:200px;
+    height:200px;
+
+    background:rgba(255,255,255,0.04);
+
+    border-radius:50%;
+    top:-90px;
+    right:-90px;
+}
+
+.reason-card:hover{
+    transform:translateY(-10px) scale(1.04);
+
+    box-shadow:
+    0 15px 40px rgba(168,85,247,0.18);
+}
+
+.reason-number{
+    font-size:45px;
+    font-weight:700;
+    margin-bottom:15px;
+
+    background:linear-gradient(
+    to right,
+    #ffb347,
+    #c084fc
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.reason-card h3{
+    font-size:24px;
+    margin-bottom:15px;
+    color:#fff1dc;
+}
+
+.reason-card p{
+    line-height:1.8;
+    color:#e9d5ff;
+}
+
+/* =========================
+   LETTER
+========================= */
+
+.letter p{
+    max-width:1000px;
+    margin:auto;
+    line-height:2;
+    padding:40px;
+    font-size:18px;
+    color:#fff7ed;
+}
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+#countdown{
+    font-size:45px;
+    font-weight:bold;
+
+    background:linear-gradient(
+    to right,
+    #ffb347,
+    #ffffff,
+    #c084fc
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:30px;
+
+    background:rgba(255,255,255,0.03);
+
+    color:#f3e8ff;
+
+    border-top:1px solid rgba(255,255,255,0.06);
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.song-box p{
+    font-size:16px;
+}
+
+.memory-slider{
+    height:360px;
+}
+
+.memory-text{
+    padding:20px;
+}
+
+.memory-text h3{
+    font-size:24px;
+}
+
+.memory-text p{
+    font-size:14px;
+}
+
+h2{
+    font-size:34px;
+}
+
+#countdown{
+    font-size:28px;
+}
+
+.photos img{
+    height:280px;
+}
+
+button{
+    padding:16px 40px;
+    font-size:16px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- MUSIC -->
+
+<div class="music">
+
+<audio id="bgMusic" loop>
+<source src="Tum Ho Toh Saiyaara 320 Kbps.mp3" type="audio/mp3">
+</audio>
+
+</div>
+
+<!-- STARS -->
+
+<div class="stars" id="stars"></div>
+
+<!-- HEARTS -->
+
+<div class="hearts" id="hearts"></div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Happiest 20th Birthday Princess ❤️</h1>
+
+<p>
+You are my peace, happiness, safest place, and favorite person forever ✨
+</p>
+
+<div class="song-box glass">
+
+<p>
+
+🎵 Tum ho toh subaha nayi hai <br>
+Tum ho toh shaamein haseen hain <br>
+Ek duniya sapnon si hai ❤️ <br><br>
+
+Tum ho toh iss pe yakeen hai <br>
+Tum ho toh sab achha hai <br>
+Tum ho toh waqt thama hai ✨ <br><br>
+
+Tum ho toh yeh lamha hai <br>
+Tum ho toh iss mein sadaa hai ❤️
+
+</p>
+
+</div>
+
+<button onclick="showSurprise()">
+Open Your Birthday Surprise 🎁
+</button>
+
+</section>
+
+<!-- SURPRISE -->
+
+<section id="surprise" class="glass">
+
+<h2>I Love You Forever 💖</h2>
+
+<div class="glass" style="padding:35px; margin-top:30px;">
+
+<p style="line-height:2.2; font-size:20px; color:#dffcff;">
+
+Teri hasi meri jaan ban gayi 😊❤️ <br>
+Teri baatein meri pehchaan ban gayi ✨ <br>
+Tumse mila toh laga aisa jaise 🫶 <br>
+Meri adhuri duniya poori ho gayi 💕🌍
+
+</p>
+
+</div>
+
+<div class="glass" style="padding:35px; margin-top:30px;">
+
+<p style="line-height:2.2; font-size:20px;">
+
+From our first conversations ❤️ <br>
+to those unforgettable movie dates 🎬✨ <br>
+Every memory with you feels magical 🫶🌍 <br><br>
+</p>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section>
+
+<h2>Our Beautiful Memories 📸</h2>
+
+<div class="photos">
+
+<img class="glass" src="photo7.jpeg">
+<img class="glass" src="photo2.jpeg">
+<img class="glass" src="photo8.jpeg">
+<img class="glass" src="photo13.jpeg">
+<img class="glass" src="photo5.jpeg">
+<img class="glass" src="photo6.jpeg">
+
+</div>
+
+</section>
+
+<!-- SLIDER -->
+
+<section>
+
+<h2>Our Forever Memories ❤️</h2>
+
+<div class="memory-slider glass">
+
+<div class="memory-slide active">
+<img src="photo10.jpeg">
+<div class="memory-text">
+<h3>Our Beautiful Moments ❤️</h3>
+<p>The day you entered my life, everything became beautiful.</p>
+</div>
+</div>
+
+<div class="memory-slide">
+<img src="photo20.jpeg">
+<div class="memory-text">
+<h3>Movie Dates 🎬</h3>
+<p>Every movie became magical because you were beside me.</p>
+</div>
+</div>
+
+<div class="memory-slide">
+<img src="photo3.jpeg">
+<div class="memory-text">
+<h3>Your Smile 😊</h3>
+<p>Your smile heals my heart in ways words cannot explain.</p>
+</div>
+</div>
+
+<div class="memory-slide">
+<img src="photo7.jpeg">
+<div class="memory-text">
+<h3>Those 3 Special Kisses 😚</h3>
+<p>Time honestly stopped in those magical moments ❤️</p>
+</div>
+</div>
+
+<div class="memory-slide">
+<img src="photo17.jpeg">
+<div class="memory-text">
+<h3>Dwarka Trip 🛕✨</h3>
+<p>I truly feel Dwarkadhish himself brought us there together ❤️</p>
+</div>
+</div>
+
+<div class="memory-slide">
+<img src="photo11.jpeg">
+<div class="memory-text">
+<h3>Forever Together ♾️</h3>
+<p>No matter what happens, I will always choose you ❤️</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- COUNTDOWN -->
+
+<section>
+
+<h2>Time Since We Fell In Love ⏳</h2>
+
+<div id="countdown"></div>
+
+</section>
+
+<!-- REASONS -->
+
+<section>
+
+<h2>20 Reasons Why I Love You ❤️</h2>
+
+<div class="reasons-grid">
+
+<div class="reason-card">
+<div class="reason-number">01</div>
+<h3>Your Smile 😊</h3>
+<p>Your smile can instantly make my worst day beautiful.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">02</div>
+<h3>Your Eyes 👀</h3>
+<p>I honestly get lost every time I look into your eyes.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">03</div>
+<h3>Your Voice 🎶</h3>
+<p>Your voice feels like comfort and peace to my heart.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">04</div>
+<h3>Your Care 💖</h3>
+<p>You care for me in ways nobody else ever could.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">05</div>
+<h3>Your Kindness 🌸</h3>
+<p>Your soft and pure heart makes you special.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">06</div>
+<h3>Movie Dates 🎬</h3>
+<p>Every movie became unforgettable because of you.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">07</div>
+<h3>Late Night Talks 🌙</h3>
+<p>Talking to you at night feels magical and peaceful.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">08</div>
+<h3>Your Laugh 😁</h3>
+<p>Your laugh is honestly my favorite sound ever.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">09</div>
+<h3>Your Support 🫶</h3>
+<p>You always stand beside me no matter what.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">10</div>
+<h3>Dwarka Memories 🛕</h3>
+<p>That trip became my favorite memory because of you.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">11</div>
+<h3>Your Innocence 😚</h3>
+<p>Your innocence makes you even more adorable.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">12</div>
+<h3>Your Loyalty 💍</h3>
+<p>Your honesty and loyalty mean everything to me.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">13</div>
+<h3>Your Hugs 🫂</h3>
+<p>Your hugs feel like the safest place in the world.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">14</div>
+<h3>Your Jealousy 🤭</h3>
+<p>Your cute jealous moments secretly make me smile.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">15</div>
+<h3>Your Presence ✨</h3>
+<p>Even ordinary moments become magical with you.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">16</div>
+<h3>Your Love ❤️</h3>
+<p>Your love changed my life completely.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">17</div>
+<h3>Your Messages 📱</h3>
+<p>Your texts still make me smile like crazy.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">18</div>
+<h3>Those Special Moments 😚</h3>
+<p>Every little moment with you feels unforgettable.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">19</div>
+<h3>My Peace 🌍</h3>
+<p>You are my comfort, peace, and happiness.</p>
+</div>
+
+<div class="reason-card">
+<div class="reason-number">20</div>
+<h3>Because You Are YOU 👑</h3>
+<p>No one in this world could ever replace you.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- LETTER -->
+
+<section class="letter">
+
+<h2>A Letter For You 💌</h2>
+
+<p class="glass">
+
+Happiest Birthday My Love ❤️
+
+<br><br>
+
+Today is not just your birthday…
+it’s the day the most beautiful soul came into this world and made my life complete 🙈🫶
+
+<br><br>
+
+Your smile heals me 😊
+Your voice comforts me 🫠
+And your love gives meaning to my life ❤️
+
+<br><br>
+
+I still remember our movie dates 🎬❤️
+those laughs,
+those eye contacts,
+and our magical moments 😚
+
+<br><br>
+
+And then came our magical Dwarka trip 🛕✨
+
+Honestly,
+I feel like Lord Krishna himself called us there together ❤️
+
+<br><br>
+
+You are my comfort,
+my peace,
+my favorite notification,
+my safest place,
+and the person I want beside me forever ❤️
+
+<br><br>
+
+No matter how much time passes,
+I will always choose you.
+Again and again.
+In every lifetime ❤️
+
+<br><br>
+
+Happy 20th Birthday Princess 👑✨
+
+<br><br>
+
+I love you endlessly ❤️
+
+</p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+Made with endless love ❤️ for the most special girl in the world
+
+</footer>
+
+<script>
+
+/* MUSIC */
+
+window.addEventListener("click", () => {
+
+const music = document.getElementById("bgMusic");
+music.play();
+
+}, { once:true });
+
+/* SURPRISE */
+
+function showSurprise(){
+
+document.getElementById("surprise").style.display = "block";
+
+window.scrollTo({
+top:document.getElementById("surprise").offsetTop,
+behavior:"smooth"
+});
+
+}
+
+/* COUNTDOWN */
+
+const startDate = new Date("2023-03-10");
+
+function updateCountdown(){
+
+const now = new Date();
+
+const diff = now - startDate;
+
+const days = Math.floor(diff / (1000*60*60*24));
+
+const hours = Math.floor((diff/(1000*60*60)) % 24);
+
+const minutes = Math.floor((diff/1000/60) % 60);
+
+document.getElementById("countdown").innerHTML =
+`${days} Days ${hours} Hours ${minutes} Minutes ❤️`;
+
+}
+
+updateCountdown();
+
+setInterval(updateCountdown,1000);
+
+/* HEARTS */
+
+const hearts = document.getElementById("hearts");
+
+for(let i=0;i<40;i++){
+
+let heart = document.createElement("span");
+
+heart.innerHTML = "❤️";
+
+heart.style.left = Math.random()*100 + "vw";
+
+heart.style.animationDuration = (Math.random()*5 + 5) + "s";
+
+heart.style.fontSize = (Math.random()*20 + 15) + "px";
+
+hearts.appendChild(heart);
+
+}
+
+/* STARS */
+
+const stars = document.getElementById("stars");
+
+for(let i=0;i<120;i++){
+
+let star = document.createElement("span");
+
+star.style.top = Math.random()*100 + "vh";
+star.style.left = Math.random()*100 + "vw";
+star.style.animationDuration = (Math.random()*3 + 2) + "s";
+
+stars.appendChild(star);
+
+}
+
+/* SLIDER */
+
+const slides = document.querySelectorAll(".memory-slide");
+
+let currentSlide = 0;
+
+function changeSlide(){
+
+slides.forEach(slide => {
+slide.classList.remove("active");
+});
+
+currentSlide++;
+
+if(currentSlide >= slides.length){
+currentSlide = 0;
+}
+
+slides[currentSlide].classList.add("active");
+
+}
+
+setInterval(changeSlide,4000);
+
+</script>
+
+</body>
+</html>
